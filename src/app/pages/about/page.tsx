@@ -23,21 +23,16 @@ export default function AboutMe() {
                     <div className="grid auto-rows-min gap-4 md:grid-cols-3">
                         <div className="aspect-video rounded-xl bg-muted/50 border">
                             <p className="p-4 flex flex-row justify-center">Hobbies</p>
-                            <ol className="p-4">
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ol>
                         </div>
                         <div className="aspect-video rounded-xl bg-muted/50 border">
-                            <p className="p-4 flex flex-row justify-center">Goals</p>
+                            <p className="p-4 flex flex-row justify-center">Metas</p>
                         </div>
                         <div className="aspect-video rounded-xl bg-muted/50 border">
-                            <p className="p-4 flex flex-row justify-center">Achievements</p>
+                            <p className="p-4 flex flex-row justify-center">Conquistas</p>
                         </div>
                     </div>
                     <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 border md:min-h-min">
-                        <p className="p-4 flex flex-row justify-center">About Me</p>
+                        <p className="p-4 flex flex-row justify-center">Sobre</p>
                     </div>
                 </div>
             </SidebarInset>
