@@ -3,6 +3,22 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink } from "@/co
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@radix-ui/react-separator";
 
+const languages = [
+    { name: "Portugues", level: "Nativo" },
+    { name: "Ingles", level: "Avançado" },
+    { name: "Italiano", level: "Intermediario" },
+];
+
+const hardSkills = [{ name: "Typescript" }, { name: "NodeJs" }, { name: "React" }, { name: "Angular" }, { name: "C#" }];
+
+const softSkills = [
+    { name: "Trabalho em equipe" },
+    { name: "Comunicação" },
+    { name: "Liderança" },
+    { name: "Proatividade" },
+    { name: "Resolução de problemas" },
+];
+
 export default function AboutMe() {
     return (
         <SidebarProvider>
@@ -23,12 +39,29 @@ export default function AboutMe() {
                     <div className="grid auto-rows-min gap-4 md:grid-cols-3">
                         <div className="aspect-video rounded-xl bg-muted/50 border">
                             <p className="p-4 flex flex-row justify-center">Idiomas</p>
+                            <ul className="p-4">
+                                {languages.map((language) => (
+                                    <li key={language.name}>
+                                        {language.name} - {language.level}
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                         <div className="aspect-video rounded-xl bg-muted/50 border">
                             <p className="p-4 flex flex-row justify-center">Habilidades Interpessoais</p>
+                            <ul className="p-4">
+                                {softSkills.map((softSkills) => (
+                                    <li key={softSkills.name}>{softSkills.name}</li>
+                                ))}
+                            </ul>
                         </div>
                         <div className="aspect-video rounded-xl bg-muted/50 border">
                             <p className="p-4 flex flex-row justify-center">Habilidades Tecnincas</p>
+                            <ul className="p-4">
+                                {hardSkills.map((hardSkills) => (
+                                    <li key={hardSkills.name}>{hardSkills.name}</li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
