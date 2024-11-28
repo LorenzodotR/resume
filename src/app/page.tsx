@@ -1,13 +1,12 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 
-export default function Page({ children }: { children: React.ReactNode }) {
+export default function Page() {
     return (
         <SidebarProvider>
             <AppSidebar />
             <main>
                 <SidebarTrigger />
-                {children}
             </main>
         </SidebarProvider>
     );
