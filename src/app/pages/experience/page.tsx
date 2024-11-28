@@ -20,8 +20,8 @@ export default function About() {
                     </Breadcrumb>
                 </header>
                 <div className="flex flex-1 flex-col gap-4 p-4">
-                    <div className="min-h-[50vh] flex-1 rounded-xl bg-stone-600 border md:min-h-min">
-                        <p className="p-4 flex flex-row justify-center">EXPERIÊNCIAS EM PROJETOS RELEVANTES</p>
+                    <div className="min-h-[50vh] flex-1 rounded-xl bg-stone-500 border md:min-h-min">
+                        <p className="p-4 flex flex-row justify-center"><strong>EXPERIÊNCIAS EM PROJETOS RELEVANTES</strong></p>
                         <div className="p-4 grid auto-rows-min gap-4 md:grid-cols-2">
                             <div className="aspect-video rounded-xl bg-muted/50 border">
                                 <p className="p-2 flex flex-row justify-center">
@@ -85,8 +85,8 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="min-h-[50vh] flex-1 rounded-xl bg-stone-600 border md:min-h-min">
-                        <p className="p-4 flex flex-row justify-center">EXPERIÊNCIAS PROFISSIONAIS</p>
+                    <div className="min-h-[50vh] flex-1 rounded-xl bg-stone-500 border md:min-h-min">
+                        <p className="p-4 flex flex-row justify-center"><strong>EXPERIÊNCIAS PROFISSIONAIS</strong></p>
                         <div className="p-4 grid auto-rows-min gap-4 md:grid-cols-2">
                             <div className="aspect-video rounded-xl bg-muted/50 border">
                                 <p className="p-2 flex flex-row justify-center">

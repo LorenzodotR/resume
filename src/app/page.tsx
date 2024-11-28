@@ -5,24 +5,18 @@ import { Separator } from "@radix-ui/react-separator";
 import { Book, Clapperboard, Music, Gamepad  } from "lucide-react";
 
 const hobbies = [
-    { id: 2, name: "Música", icon: Music },
-    { id: 3, name: "Leituras" ,icon: Book },
-    { id: 5, name: "Séries", icon:  Clapperboard},
-    { id: 6, name: "CS2", icon: Gamepad},
+    { id: 2, name: "Music", icon: Music },
+    { id: 3, name: "Read Books" ,icon: Book },
+    { id: 5, name: "Watch Series and Movies", icon:  Clapperboard},
+    { id: 6, name: "In the free time I like to play some diferent games", icon: Gamepad},
 ];
 
 const goals = [
     { id: 1, name: "Finalizar a criação do aplicativo de Finanças" },
-    { id: 2, name: "Concluir meu projeto de extensão na faculdade" },
-    { id: 3, name: "Finalizar minha especialização em finanças" },
 ];
 
 const achievements = [
     { id: 1, name: "Certificado de conclusão do curso de React" },
-    { id: 2, name: "Certificado de conclusão do curso de Tailwind" },
-    { id: 3, name: "Certificado de conclusão do curso de Next.js" },
-    { id: 4, name: "Certificado de conclusão do curso de Node.js" },
-    { id: 5, name: "Certificado de conclusão do curso de TypeScript" },
 ];
 
 export default function AboutMe() {
@@ -41,7 +35,7 @@ export default function AboutMe() {
                         </BreadcrumbList>
                     </Breadcrumb>
                 </header>
-                <div className="flex flex-1 flex-col gap-4 p-4 bg-stone-600">
+                <div className="flex flex-1 flex-col gap-4 p-4 bg-stone-500">
                     <div className="grid auto-rows-min gap-4 md:grid-cols-3">
                         <div className="aspect-video rounded-xl bg-muted/50 border">
                             <p className="p-4 flex flex-row justify-center">Hobbies</p>
