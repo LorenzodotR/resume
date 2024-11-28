@@ -36,8 +36,8 @@ export default function AboutMe() {
                         </BreadcrumbList>
                     </Breadcrumb>
                 </header>
-                <div className="flex flex-1 flex-col gap-4 p-4 bg-stone-600">
-                    <div className="grid auto-rows-min gap-4 md:grid-cols-3">
+                <div className="flex flex-1 flex-col gap-4 p-4">
+                    <div className="grid auto-rows-min gap-4 p-4 md:grid-cols-2 min-h-[100vh] flex-1 rounded-xl bg-stone-600 border md:min-h-min">
                         <div className="aspect-video rounded-xl bg-muted/50 border">
                             <p className="p-4 flex flex-row justify-center">Idiomas</p>
                             <ul className="p-4">

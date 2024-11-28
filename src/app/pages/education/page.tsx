@@ -33,7 +33,7 @@ export default function AboutMe() {
                     <div className="min-h-[100vh] flex-1 rounded-xl bg-stone-600 border md:min-h-min">
                         <p className="p-4 flex flex-row justify-center">
                             <Image src={logo} alt="Logo Descomplica" width={25} height={25} className="rounded-full" />
-                            <span className="pl-2">Faculdade Descomplica EAD</span>
+                            <span className="pl-2"><strong>Faculdade Descomplica EAD</strong></span>
                         </p>
                         <div className="p-4 grid auto-rows-min gap-4 md:grid-cols-2">
                             <div className="aspect-video rounded-xl bg-muted/50 border">
