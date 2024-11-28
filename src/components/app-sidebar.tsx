@@ -5,7 +5,7 @@ import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGrou
 const items = [
     {
         title: "Sobre",
-        url: "/pages/about",
+        url: "/",
         icon: User,
     },
     {
