@@ -2,12 +2,13 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink } from "@/components/ui/breadcrumb";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@radix-ui/react-separator";
+import { Book, Clapperboard, Music, Gamepad  } from "lucide-react";
 
 const hobbies = [
-    { id: 2, name: "Música" },
-    { id: 3, name: "Leituras" },
-    { id: 5, name: "Séries" },
-    { id: 6, name: "CS2" },
+    { id: 2, name: "Música", icon: Music },
+    { id: 3, name: "Leituras" ,icon: Book },
+    { id: 5, name: "Séries", icon:  Clapperboard},
+    { id: 6, name: "CS2", icon: Gamepad},
 ];
 
 const goals = [
@@ -40,14 +41,15 @@ export default function AboutMe() {
                         </BreadcrumbList>
                     </Breadcrumb>
                 </header>
-                <div className="flex flex-1 flex-col gap-4 p-4">
+                <div className="flex flex-1 flex-col gap-4 p-4 bg-stone-600">
                     <div className="grid auto-rows-min gap-4 md:grid-cols-3">
                         <div className="aspect-video rounded-xl bg-muted/50 border">
                             <p className="p-4 flex flex-row justify-center">Hobbies</p>
                             <ul className="p-4">
                                 {hobbies.map((hobby) => (
-                                    <li key={hobby.id} className="flex flex-row justify-between pb-3">
-                                        <span>{hobby.name}</span>
+                                    <li key={hobby.id} className="flex flex-row pb-3">
+                                        <hobby.icon />
+                                        <span className="pl-2">{hobby.name}</span>
                                     </li>
                                 ))}
                             </ul>
